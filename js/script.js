@@ -33,3 +33,31 @@ function toggleMobileMenu() {
 
 // Añadir Event Listener al botón de menú móvil
 document.getElementById('mobile-menu-button').addEventListener('click', toggleMobileMenu);
+
+// Función para actualizar el enlace activo en el navbar
+function setActiveNavLink() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    let currentSection = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 80; // Ajusta el offset según la altura del navbar
+        if (pageYOffset >= sectionTop) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active'); // Remueve la clase 'active' de todos los enlaces
+        if (link.getAttribute('href') === `#${currentSection}`) {
+            link.classList.add('active'); // Agrega la clase 'active' al enlace correspondiente
+        }
+    });
+}
+
+// Evento que se dispara al hacer scroll
+window.addEventListener('scroll', setActiveNavLink);
+
+// Ejecuta la función al cargar la página para establecer el enlace activo inicialmente
+window.addEventListener('load', setActiveNavLink);
