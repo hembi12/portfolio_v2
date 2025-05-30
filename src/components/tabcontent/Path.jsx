@@ -1,39 +1,28 @@
-import { FiEye, FiDownload } from "react-icons/fi";
+import { useState } from "react";
+import { FiEye, FiDownload, FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 const experience = [
   {
-    company: "Tech Solutions MX",
-    role: "Frontend Developer",
-    period: "Ene 2023 - Actualidad",
+    company: "Paypal",
+    role: "Agente de soluciones para clientes",
+    period: "Julio 2023 - Marzo 2025",
     details:
-      "Desarrollo de interfaces responsivas con React y Tailwind CSS para productos SaaS.",
+      "Agente de soporte en empresa Fintech global, resolviendo incidencias de pagos digitales y optimizando la experiencia del cliente.",
   },
   {
-    company: "Innova Web Studio",
-    role: "Diseñador Web",
-    period: "Ago 2021 - Dic 2022",
+    company: "Teleperformance",
+    role: "Supervisor - Agente de atención",
+    period: "Agosto 2019 - Junio 2023",
     details:
-      "Creación de sitios web modernos y accesibles para pymes usando herramientas no-code y código personalizado.",
-  },
-  {
-    company: "Freelance",
-    role: "Desarrollador Full Stack",
-    period: "2020 - 2021",
-    details:
-      "Proyectos personalizados para clientes particulares, incluyendo APIs, paneles admin y landing pages.",
+      "Supervisor y agente en BPO global, gestionando soporte para banca estadounidense y atención a clientes de app de entrega de comida.",
   },
 ];
 
 const education = [
   {
-    institution: "Universidad Tecnológica de México",
-    degree: "Ingeniería en Desarrollo de Software",
-    period: "2017 - 2021",
-  },
-  {
-    institution: "Platzi",
-    degree: "Escuela de Desarrollo Web",
-    period: "2022 - Presente",
+    institution: "Universidad Tecnológica Latinoamericana en Línea",
+    degree: "Licenciatura en Administración de Tecnologías de la Información",
+    period: "Febrero 2022 - Actualidad",
   },
 ];
 
@@ -42,18 +31,52 @@ const certifications = [
     name: "Certificación en React",
     issuer: "Udemy",
     year: "2023",
+    viewUrl: "/certificados/react-certificado.pdf",
+    downloadUrl: "/certificados/react-certificado.pdf",
   },
   {
     name: "Frontend Developer",
     issuer: "FreeCodeCamp",
     year: "2022",
-  },
-  {
-    name: "JavaScript Algorithms and Data Structures",
-    issuer: "FreeCodeCamp",
-    year: "2021",
+    viewUrl: "/certificados/frontend-certificado.pdf",
+    downloadUrl: "/certificados/frontend-certificado.pdf",
   },
 ];
+
+function ExperienceItem({ job }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <li className="border-l-4 border-amber-400 pl-5 rounded-md py-3 space-y-1">
+      <h3 className="text-xl font-semibold text-neutral-300">
+        {job.role}
+        <span className="text-neutral-300 font-normal"> @ {job.company}</span>
+      </h3>
+      <p className="text-sm text-neutral-400">{job.period}</p>
+      <button
+        onClick={() => setOpen(!open)}
+        className="text-sm text-amber-400 flex items-center gap-1 hover:underline focus:outline-none"
+      >
+        {open ? (
+          <>
+            <FiChevronUp className="text-base" />
+            Mostrar menos
+          </>
+        ) : (
+          <>
+            <FiChevronDown className="text-base" />
+            Mostrar más
+          </>
+        )}
+      </button>
+      {open && (
+        <p className="text-sm text-neutral-300 mt-2 transition-all duration-300">
+          {job.details}
+        </p>
+      )}
+    </li>
+  );
+}
 
 export default function Path() {
   return (
@@ -86,23 +109,11 @@ export default function Path() {
         </h2>
         <ul className="space-y-8">
           {experience.map((job, idx) => (
-            <li
-              key={idx}
-              className="border-l-4 border-amber-400 pl-5 rounded-md py-3"
-            >
-              <h3 className="text-xl font-semibold text-neutral-200">
-                {job.role}
-                <span className="text-neutral-300 font-normal">
-                  {" "}
-                  @ {job.company}
-                </span>
-              </h3>
-              <p className="text-sm text-neutral-400">{job.period}</p>
-              <p className="text-sm text-neutral-300 mt-1">{job.details}</p>
-            </li>
+            <ExperienceItem key={idx} job={job} />
           ))}
         </ul>
       </div>
+
       {/* Educación */}
       <div>
         <h2 className="text-3xl font-extrabold text-amber-400 mb-10">
@@ -128,12 +139,31 @@ export default function Path() {
         </h2>
         <ul className="space-y-6">
           {certifications.map((cert, idx) => (
-            <li key={idx} className="border-l-4 border-amber-400 pl-5">
+            <li key={idx} className="border-l-4 border-amber-400 pl-5 space-y-1">
               <h3 className="text-xl font-semibold text-neutral-300">
                 {cert.name}
               </h3>
               <p className="text-sm text-neutral-400">{cert.issuer}</p>
               <p className="text-sm text-neutral-300">{cert.year}</p>
+              <div className="flex gap-4 mt-2">
+                <a
+                  href={cert.viewUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-sm text-neutral-100 hover:text-amber-400 hover:underline gap-2 transition"
+                >
+                  <FiEye className="text-base" />
+                  Ver PDF
+                </a>
+                <a
+                  href={cert.downloadUrl}
+                  download
+                  className="flex items-center text-sm text-neutral-100 hover:text-amber-400 hover:underline gap-2 transition"
+                >
+                  <FiDownload className="text-base" />
+                  Descargar PDF
+                </a>
+              </div>
             </li>
           ))}
         </ul>

@@ -1,10 +1,14 @@
 import js from '@eslint/js'
 import globals from 'globals'
+import nodeGlobals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default [
+  // Ignorar carpeta de salida
   { ignores: ['dist'] },
+
+  // Configuración general para frontend (React)
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
@@ -28,6 +32,21 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+    },
+  },
+
+  // 👇 Configuración específica para el backend Node.js
+  {
+    files: ['contact-backend/**/*.js'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'commonjs',
+      globals: {
+        ...nodeGlobals.node,
+      },
+    },
+    rules: {
+      // Reglas específicas para backend si deseas agregar
     },
   },
 ]

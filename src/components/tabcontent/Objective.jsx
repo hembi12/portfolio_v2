@@ -1,6 +1,6 @@
 export default function Objective() {
   return (
-    <section className="w-full max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <section className="w-full max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
       <div className="text-neutral-300 leading-relaxed text-sm sm:text-base md:text-lg space-y-4">
         <p>
           Mi objetivo al aprender <span className="font-semibold text-amber-400">programación</span> es transformar ideas en herramientas útiles que tengan un impacto <span className="font-semibold text-amber-400">positivo</span> en la vida de las personas. Me he formado principalmente como <span className="font-semibold text-amber-400">autodidacta</span>, pero ahora quiero formar parte de un <span className="font-semibold text-amber-400">equipo</span> donde pueda aprender, aportar y crecer dentro de una <span className="font-semibold text-amber-400">comunidad</span>.

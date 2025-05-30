@@ -1,8 +1,8 @@
 import Projects from "./tabcontent/Projects";
-import AboutMe from "./tabcontent/AboutMe";
+import AboutMe from "./tabcontent/about/AboutMe";
 import Objective from "./tabcontent/Objective";
-import Contact from "./tabcontent/Contact";
-import Path from "./tabcontent/Path"; // ✅ nuevo import
+import Contact from "./contact/Contact";
+import Path from "./tabcontent/Path";
 
 export default function TabContent({ tab }) {
   switch (tab) {
@@ -10,7 +10,7 @@ export default function TabContent({ tab }) {
       return <Projects />;
     case "sobremi":
       return <AboutMe />;
-    case "trayectoria": // ✅ nueva opción
+    case "trayectoria":
       return <Path />;
     case "objetivo":
       return <Objective />;

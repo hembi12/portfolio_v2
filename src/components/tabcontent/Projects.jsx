@@ -85,7 +85,7 @@ const projects = [
     ],
     icons: ["mobile", "tablet", "desktop", "dark", "translate"],
     liveUrl: "https://tiendadigital.store",
-    repoUrl: "https://github.com/usuario/tiendadigital",
+    repoUrl: "https://github.com/hembi12/portfolio_v2",
   },
   {
     title: "Invitación de cumpleaños",
@@ -144,14 +144,14 @@ export default function Projects() {
       {projects.map((project, idx) => (
         <div
           key={idx}
-          className="bg-black border border-neutral-500 rounded-xl shadow-md p-6 flex flex-col justify-between h-full"
+          className="bg-gradient-to-br from-[#1a1a1a] via-[#0d0d0d] to-[#1f1f1f] border border-[#2a2a2a] rounded-xl shadow-inner shadow-black/40 ring-1 ring-[#2e2e2e] p-6 flex flex-col justify-between h-full"
         >
           <div>
             <h2 className="text-lg md:text-xl font-semibold text-amber-400 mb-2">
               {project.title}
             </h2>
 
-            <div className="flex gap-3 mb-2 text-neutral-200 text-xl">
+            <div className="flex gap-3 mb-2 text-neutral-300 text-xl">
               {project.icons?.map((iconKey, i) => (
                 <span key={i}>{iconMap[iconKey]}</span>
               ))}

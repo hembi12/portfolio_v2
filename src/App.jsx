@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Briefcase, User, Target, Mail, Layers } from "lucide-react"; // ✅ se añadió Layers
+import { Briefcase, User, Target, Mail, Layers } from "lucide-react"; 
 import Hero from "./components/hero/Hero";
 import Tabs from "./components/tabs/Tabs";
 import TabContent from "./components/TabContent";
@@ -11,7 +11,7 @@ export default function App() {
   const tabs = [
     { id: "proyectos", label: "Proyectos", icon: Briefcase },
     { id: "sobremi", label: "Sobre mí", icon: User },
-    { id: "trayectoria", label: "Trayectoria", icon: Layers }, // ✅ nuevo tab
+    { id: "trayectoria", label: "Trayectoria", icon: Layers }, 
     { id: "objetivo", label: "Objetivo", icon: Target },
     { id: "contacto", label: "Contacto", icon: Mail },
   ];
@@ -22,7 +22,8 @@ export default function App() {
   };
 
   return (
-    <main className="min-h-screen bg-black font-sans px-4 md:px-8 py-12 relative">
+    <main className="min-h-screen bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-[#121212] bg-fixed font-sans px-4 md:px-8 py-12 relative">
+      {" "}
       <Hero />
       <Tabs
         tabs={tabs}
