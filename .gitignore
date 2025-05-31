@@ -1,3 +1,7 @@
+# Environment variables
+.env
+.env.*  # Captura .env.local, .env.production, etc.
+
 # Logs
 logs
 *.log
@@ -7,15 +11,20 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Local environment
 *.local
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
