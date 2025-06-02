@@ -1,6 +1,6 @@
 export default function Tabs({ tabs, tab, setTab, tooltip, showTooltip }) {
     return (
-      <nav className="flex justify-center items-center gap-6 border-b border-neutral-600 pb-4 mb-8 flex-wrap sm:flex-nowrap">
+      <nav className="flex justify-center items-center gap-6 border-b border-neutral-300 pb-4 mb-8 flex-wrap sm:flex-nowrap">
         {tabs.map((tabItem) => (
           <div key={tabItem.id} className="relative group">
             <button
@@ -20,11 +20,11 @@ export default function Tabs({ tabs, tab, setTab, tooltip, showTooltip }) {
   
             {/* Tooltip solo en móvil */}
             <div
-              className={`absolute bottom-full mb-3 left-1/2 -translate-x-1/2 text-xs bg-neutral-600 text-neutral-100 px-2 py-1 rounded shadow-md transition-opacity duration-200 whitespace-nowrap sm:hidden ${
+              className={`absolute bottom-full mb-3 left-1/2 -translate-x-1/2 text-xs bg-blue-900 text-neutral-100 px-2 py-1 rounded shadow-md transition-opacity duration-200 whitespace-nowrap sm:hidden ${
                 tooltip === tabItem.id ? "opacity-100" : "opacity-0"
               }`}
             >
-              <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-x-8 border-x-transparent border-t-8 border-t-neutral-600"></div>
+              <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-x-8 border-x-transparent border-t-8 border-t-blue-900"></div>
               {tabItem.label}
             </div>
           </div>

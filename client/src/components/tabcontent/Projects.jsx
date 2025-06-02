@@ -12,6 +12,7 @@ import {
   SiExpress,
   SiFramer,
   SiFormspree,
+  SiRender,
 } from "react-icons/si";
 import {
   MdPhoneIphone,
@@ -80,7 +81,7 @@ const projects = [
       "Tailwind CSS",
       "Dotenv",
       "Git",
-      "Firebase",
+      "Render",
       "Vercel",
     ],
     icons: ["mobile", "tablet", "desktop", "dark", "translate"],
@@ -137,6 +138,7 @@ export default function Projects() {
     HTML: <FaHtml5 title="HTML" className="text-orange-500" />,
     CSS: <FaCss3Alt title="CSS" className="text-blue-500" />,
     Bootstrap: <FaBootstrap title="Bootstrap" className="text-purple-500" />,
+    Render: <SiRender title="Render" className="text-white" />,
   };
 
   return (
@@ -144,10 +146,16 @@ export default function Projects() {
       {projects.map((project, idx) => (
         <div
           key={idx}
-          className="bg-gradient-to-br from-[#1a1a1a] via-[#0d0d0d] to-[#1f1f1f] border border-[#2a2a2a] rounded-xl shadow-inner shadow-black/40 ring-1 ring-[#2e2e2e] p-6 flex flex-col justify-between h-full"
-        >
+          className="bg-gradient-to-br from-[#0b0e1a] via-[#1a1f2f] to-[#0b0e1a] 
+          border border-[#1a2a4a] 
+          rounded-3xl 
+          shadow-xl shadow-black/30 
+          transition duration-300
+          hover:scale-105 
+          p-6 
+          flex flex-col justify-between h-full text-white">
           <div>
-            <h2 className="text-lg md:text-xl font-semibold text-amber-400 mb-2">
+            <h2 className="text-xl md:text-2xl font-semibold text-amber-400 mb-2">
               {project.title}
             </h2>
 
@@ -157,17 +165,14 @@ export default function Projects() {
               ))}
             </div>
 
-            <p className="text-gray-300 text-sm md:text-base mb-4">
+            <p className="text-neutral-200 text-sm md:text-base mb-4">
               {project.description}
             </p>
 
             <div className="mb-4">
-              <h3 className="font-medium text-sm text-gray-400 mb-1">
-                Tecnologías:
-              </h3>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, i) => (
-                  <span key={i} className="text-xl text-neutral-200">
+                  <span key={i} className="text-xl">
                     {techIconMap[tech]}
                   </span>
                 ))}
@@ -175,12 +180,12 @@ export default function Projects() {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-3 mt-4">
+          <div className="flex flex-col sm:flex-row gap-3 mt-2">
             <a
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black bg-neutral-100 hover:bg-neutral-300 px-4 py-2 text-sm rounded-xl text-center flex items-center justify-center gap-2"
+              className="text-black bg-neutral-100 hover:bg-amber-400 px-4 py-2 text-sm rounded-xl text-center flex items-center justify-center gap-2"
             >
               <FiExternalLink /> Ver Página
             </a>
@@ -188,7 +193,7 @@ export default function Projects() {
               href={project.repoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-100 border border-neutral-100 hover:bg-neutral-700 px-4 py-2 text-sm rounded-xl text-center flex items-center justify-center gap-2"
+              className="text-neutral-100 border border-neutral-100 hover:bg-amber-400 hover:border-amber-400 hover:text-black px-4 py-2 text-sm rounded-xl text-center flex items-center justify-center gap-2"
             >
               <FiGithub /> Repositorio
             </a>

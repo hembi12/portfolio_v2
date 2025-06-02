@@ -26,6 +26,7 @@ import {
   SiFramer,
   SiFormspree,
   SiOpenai,
+  SiRender,
 } from "react-icons/si";
 
 import { BiLogoVisualStudio } from "react-icons/bi";
@@ -33,6 +34,7 @@ import { BiLogoVisualStudio } from "react-icons/bi";
 export default function Hero() {
   const techIcons = [
     { icon: SiReact, label: "React", hoverColor: "hover:text-cyan-400" },
+    { icon: SiRender, label: "Render", hoverColor: "hover:text-white" },
     { icon: SiNextdotjs, label: "Next.js", hoverColor: "hover:text-white" },
     { icon: SiVite, label: "Vite", hoverColor: "hover:text-purple-400" },
     {
@@ -85,18 +87,18 @@ export default function Hero() {
 
   return (
     <section className="max-w-3xl mx-auto text-center mb-2 px-2">
-      <h1 className="text-neutral-50 text-3xl md:text-5xl font-bold mb-4 tracking-tight">
+      <h1 className="text-neutral-100 text-3xl md:text-5xl font-bold mb-4 tracking-tight">
         Hola, soy <span className="text-amber-400">Héctor Martil</span>
       </h1>
 
       <div className="flex flex-wrap justify-center pt-2 gap-2 text-sm">
-        <span className="bg-neutral-600 text-neutral-100 px-3 py-1 rounded-full flex items-center gap-2 transition-transform hover:scale-105">
+        <span className="border border-amber-400 text-amber-400  px-3 py-1 rounded-full flex items-center gap-2 transition-transform hover:scale-105">
           <FaMapMarkerAlt className="text-xs" /> CDMX
         </span>
-        <span className="bg-neutral-600 text-neutral-100 px-3 py-1 rounded-full flex items-center gap-2 transition-transform hover:scale-105">
+        <span className="border border-amber-400 text-amber-400  px-3 py-1 rounded-full flex items-center gap-2 transition-transform hover:scale-105">
           <FaGlobeAmericas className="text-xs" /> México
         </span>
-        <span className="bg-neutral-600 text-neutral-100 px-3 py-1 rounded-full flex items-center gap-2 transition-transform hover:scale-105">
+        <span className="border border-amber-400 text-amber-400  px-3 py-1 rounded-full flex items-center gap-2 transition-transform hover:scale-105">
           <FaClock className="text-xs" />
           {new Date().toLocaleTimeString("es-MX", {
             hour: "2-digit",
@@ -105,15 +107,15 @@ export default function Hero() {
           })}{" "}
           (UTC-6)
         </span>
-        <span className="bg-neutral-600 text-neutral-100 px-3 py-1 rounded-full flex items-center gap-2 transition-transform hover:scale-105">
+        <span className="border border-amber-400 text-amber-400 px-3 py-1 rounded-full flex items-center gap-2 transition-transform hover:scale-105">
           <FaHome className="text-xs" /> Remoto
         </span>
-        <span className="bg-neutral-600 text-neutral-100 px-3 py-1 rounded-full flex items-center gap-2 transition-transform hover:scale-105">
+        <span className="border border-amber-400 text-amber-400  px-3 py-1 rounded-full flex items-center gap-2 transition-transform hover:scale-105">
           <FaBuilding className="text-xs" /> Presencial
         </span>
       </div>
 
-      <p className="text-neutral-200 text-base md:text-lg leading-relaxed py-6">
+      <p className="text-neutral-100 text-base md:text-lg leading-relaxed py-6">
         Diseño experiencias digitales limpias, rápidas y centradas en el
         usuario.
       </p>
@@ -129,7 +131,7 @@ export default function Hero() {
                 className="flex flex-col items-center group relative mx-2"
               >
                 <Icon
-                  className={`text-3xl md:text-4xl text-neutral-400 transition-colors ${item.hoverColor}`}
+                  className={`text-3xl md:text-4xl text-neutral-300 transition-colors ${item.hoverColor}`}
                 />
                 <span className="text-xs text-neutral-200 opacity-0 group-hover:opacity-100 mt-1 transition-opacity duration-300">
                   {item.label}

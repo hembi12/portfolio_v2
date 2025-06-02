@@ -22,7 +22,7 @@ export default function App() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-[#121212] bg-fixed font-sans px-4 md:px-8 py-12 relative">
+    <main className="min-h-screen bg-gradient-to-b from-[#000c2a] via-[#011c4f] to-[#012169] font-sans px-4 md:px-8 py-12 relative">
       {" "}
       <Hero />
       <Tabs

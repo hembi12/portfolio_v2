@@ -2,7 +2,7 @@ import Projects from "./tabcontent/Projects";
 import AboutMe from "./tabcontent/about/AboutMe";
 import Objective from "./tabcontent/Objective";
 import Contact from "./contact/Contact";
-import Path from "./tabcontent/Path";
+import Path from "./tabcontent/path/Path";
 
 export default function TabContent({ tab }) {
   switch (tab) {
