@@ -51,15 +51,20 @@ export default function Contact() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:4000/contact", {
+      const res = await fetch("https://portfolio-v2-u9wg.onrender.com/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, subject, message }),
       });
 
       const { message: resultMessage } = await res.json();
-      showToastMessage("success", resultMessage);
-      form.reset();
+
+      if (res.ok) {
+        showToastMessage("success", resultMessage);
+        form.reset();
+      } else {
+        showToastMessage("error", resultMessage || "Error al enviar el mensaje.");
+      }
     } catch (error) {
       console.error("Error:", error);
       showToastMessage("error", "Ocurrió un error al enviar el mensaje.");
