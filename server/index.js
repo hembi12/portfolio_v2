@@ -4,7 +4,12 @@ const nodemailer = require("nodemailer");
 require("dotenv").config();
 
 const app = express();
-app.use(cors());
+
+// ✅ Permitir solo solicitudes desde tu dominio en Vercel
+app.use(cors({
+  origin: "https://portfolio-v2-iota-one-33.vercel.app"
+}));
+
 app.use(express.json());
 
 // Ruta POST /contact
