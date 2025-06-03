@@ -1,16 +1,17 @@
 import { useState } from "react";
 import SocialLinks from "../about/SocialLink";
 import TweetCard from "../about/TweetCard";
-import tweets from "../about/tweetsData"; // Ajusta la ruta si está en otro lugar
+import tweets from "./tweetsData";
 
 export default function AboutMe() {
   const [paused, setPaused] = useState(false);
 
   return (
     <div className="max-w-full overflow-hidden space-y-6">
+      {/* Redes sociales */}
       <SocialLinks />
 
-      {/* Carrusel normal con máscara */}
+      {/* Carrusel normal */}
       <div className="marquee-wrapper">
         <div
           className={`flex w-max gap-4 py-4 auto-scroll ${
@@ -29,7 +30,7 @@ export default function AboutMe() {
         </div>
       </div>
 
-      {/* Carrusel reverso con máscara */}
+      {/* Carrusel en reversa */}
       <div className="marquee-wrapper">
         <div
           className={`flex w-max gap-4 py-4 auto-scroll-reverse ${

@@ -8,10 +8,12 @@ import {
   FaEllipsisH,
 } from "react-icons/fa";
 import { HiCheckBadge } from "react-icons/hi2";
-import ProfileLego from "../../../assets/Profile_Lego.png"; // Ajusta si usas alias
+import { useTranslation } from "react-i18next";
+import ProfileLego from "../../../assets/Profile_Lego.png";
 
 export default function TweetCard({ tweet }) {
-  const { title, handle, time, description, icons } = tweet;
+  const { t } = useTranslation();
+  const { title, handle, time, descriptionKey, icons } = tweet;
 
   return (
     <div
@@ -43,9 +45,9 @@ export default function TweetCard({ tweet }) {
         </div>
       </div>
 
-      {/* Texto del tweet */}
+      {/* Texto del tweet traducido */}
       <p className="text-neutral-200 break-words whitespace-normal">
-        {description}
+        {t(descriptionKey)}
       </p>
 
       {/* Reacciones */}

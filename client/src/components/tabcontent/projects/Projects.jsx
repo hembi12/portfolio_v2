@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   SiReact,
   SiTailwindcss,
@@ -30,85 +31,83 @@ import {
 } from "react-icons/fa";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 
-const projects = [
-  {
-    title: "Portafolio V1",
-    description:
-      "Este es mi primer portafolio, una muestra del inicio de mi camino como desarrollador.",
-    technologies: [
-      "Javascript",
-      "React",
-      "Express",
-      "Nodejs",
-      "Tailwind CSS",
-      "Dotenv",
-      "Git",
-      "Twilio",
-      "Vercel",
-    ],
-    icons: ["mobile", "tablet", "desktop", "dark", "translate"],
-    liveUrl: "https://www.hectormartil.dev/",
-    repoUrl: "https://github.com/hembi12/my-portfolio",
-  },
-  {
-    title: "Invitación de boda",
-    description:
-      "Muestra a los invitados todos los detalles del evento y les permite confirmar su asistencia.",
-    technologies: [
-      "Javascript",
-      "React",
-      "Next.js",
-      "Nodejs",
-      "Tailwind CSS",
-      "Dotenv",
-      "Git",
-      "Formspree",
-      "Vercel",
-    ],
-    icons: ["mobile", "tablet", "desktop"],
-    liveUrl: "https://www.bodahectormichelle.info/",
-    repoUrl: "https://github.com/hembi12/wedding",
-  },
-  {
-    title: "Portafolio V2",
-    description:
-      "Una versión renovada y más profesional de mi portafolio, con mejor estructura, diseño moderno y componentes reutilizables.",
-    technologies: [
-      "Javascript",
-      "React",
-      "Vite",
-      "Nodejs",
-      "Tailwind CSS",
-      "Dotenv",
-      "Git",
-      "Render",
-      "Vercel",
-    ],
-    icons: ["mobile", "tablet", "desktop", "dark", "translate"],
-    liveUrl: "https://tiendadigital.store",
-    repoUrl: "https://github.com/hembi12/portfolio_v2",
-  },
-  {
-    title: "Invitación de cumpleaños",
-    description:
-      "Muestra a los invitados todos los detalles del evento y les permite confirmar su asistencia.",
-    technologies: [
-      "Javascript",
-      "HTML",
-      "CSS",
-      "Nodejs",
-      "Bootstrap",
-      "Dotenv",
-      "Git",
-      "Firebase",
-    ],
-    icons: ["mobile", "tablet", "desktop", "dark"],
-    liveUrl: "https://tareaspro.com",
-    repoUrl: "https://github.com/usuario/tareaspro",
-  },
-];
-
 export default function Projects() {
+  const { t } = useTranslation();
+
+  const projects = [
+    {
+      title: t("projects_section.title_v1"),
+      description: t("projects_section.desc_v1"),
+      technologies: [
+        "Javascript",
+        "React",
+        "Express",
+        "Nodejs",
+        "Tailwind CSS",
+        "Dotenv",
+        "Git",
+        "Twilio",
+        "Vercel",
+      ],
+      icons: ["mobile", "tablet", "desktop", "dark", "translate"],
+      liveUrl: "https://www.hectormartil.dev/",
+      repoUrl: "https://github.com/hembi12/my-portfolio",
+    },
+    {
+      title: t("projects_section.title_wedding"),
+      description: t("projects_section.desc_wedding"),
+      technologies: [
+        "Javascript",
+        "React",
+        "Next.js",
+        "Nodejs",
+        "Tailwind CSS",
+        "Dotenv",
+        "Git",
+        "Formspree",
+        "Vercel",
+      ],
+      icons: ["mobile", "tablet", "desktop"],
+      liveUrl: "https://www.bodahectormichelle.info/",
+      repoUrl: "https://github.com/hembi12/wedding",
+    },
+    {
+      title: t("projects_section.title_v2"),
+      description: t("projects_section.desc_v2"),
+      technologies: [
+        "Javascript",
+        "React",
+        "Vite",
+        "Nodejs",
+        "Tailwind CSS",
+        "Dotenv",
+        "Git",
+        "Render",
+        "Vercel",
+      ],
+      icons: ["mobile", "tablet", "desktop", "dark", "translate"],
+      liveUrl: "https://tiendadigital.store",
+      repoUrl: "https://github.com/hembi12/portfolio_v2",
+    },
+    {
+      title: t("projects_section.title_birthday"),
+      description: t("projects_section.desc_birthday"),
+      technologies: [
+        "Javascript",
+        "HTML",
+        "CSS",
+        "Nodejs",
+        "Bootstrap",
+        "Dotenv",
+        "Git",
+        "Firebase",
+      ],
+      icons: ["mobile", "tablet", "desktop", "dark"],
+      liveUrl: "https://tareaspro.com",
+      repoUrl: "https://github.com/usuario/tareaspro",
+    },
+  ];
+
   const iconMap = {
     mobile: <MdPhoneIphone title="Responsive móvil" />,
     tablet: <MdTabletMac title="Responsive tablet" />,
@@ -153,7 +152,8 @@ export default function Projects() {
           transition duration-300
           hover:scale-105 
           p-6 
-          flex flex-col justify-between h-full text-white">
+          flex flex-col justify-between h-full text-white"
+        >
           <div>
             <h2 className="text-xl md:text-2xl font-semibold text-amber-400 mb-2">
               {project.title}
@@ -185,17 +185,17 @@ export default function Projects() {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black bg-neutral-100 hover:bg-amber-400 px-4 py-2 text-sm rounded-xl text-center flex items-center justify-center gap-2"
+              className="text-black bg-neutral-100 hover:text-blue-950 hover:bg-amber-400 px-4 py-2 text-sm rounded-xl text-center flex items-center justify-center gap-2"
             >
-              <FiExternalLink /> Ver Página
+              <FiExternalLink /> {t("projects_section.view_page")}
             </a>
             <a
               href={project.repoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-100 border border-neutral-100 hover:bg-amber-400 hover:border-amber-400 hover:text-black px-4 py-2 text-sm rounded-xl text-center flex items-center justify-center gap-2"
+              className="text-neutral-100 border border-neutral-100 hover:bg-amber-400 hover:border-amber-400 hover:text-blue-950 px-4 py-2 text-sm rounded-xl text-center flex items-center justify-center gap-2"
             >
-              <FiGithub /> Repositorio
+              <FiGithub /> {t("projects_section.repository")}
             </a>
           </div>
         </div>

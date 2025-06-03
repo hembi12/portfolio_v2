@@ -1,6 +1,6 @@
-import Projects from "./tabcontent/Projects";
+import Projects from "./tabcontent/projects/Projects";
 import AboutMe from "./tabcontent/about/AboutMe";
-import Objective from "./tabcontent/Objective";
+import Objective from "./tabcontent/objective/Objective";
 import Contact from "./contact/Contact";
 import Path from "./tabcontent/path/Path";
 

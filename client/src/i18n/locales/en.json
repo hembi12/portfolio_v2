@@ -1,0 +1,82 @@
+{
+  "theme_light": "Light Theme",
+  "theme_dark": "Dark Theme",
+  "language": "Language",
+  "language_short": "EN",
+  "tabs": {
+    "projects": "Projects",
+    "about_me": "About Me",
+    "career": "Career",
+    "objective": "Roadmap",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "location": "Mexico City",
+    "country": "Mexico",
+    "time": "(UTC-6)",
+    "remote": "Remote",
+    "onsite": "On-site",
+    "description": "I design clean, fast, and user-centered digital experiences."
+  },
+  "projects_section": {
+    "title_v1": "Portfolio V1",
+    "desc_v1": "This is my first portfolio, a showcase of the beginning of my journey as a developer.",
+    "title_wedding": "Wedding Invitation",
+    "desc_wedding": "Shows guests all the event details and lets them RSVP.",
+    "title_v2": "Portfolio V2",
+    "desc_v2": "An improved version of my portfolio, with a better structure, a modern design, and reusable components.",
+    "title_birthday": "Birthday Invitation",
+    "desc_birthday": "Shows guests all the event details and lets them RSVP.",
+    "view_page": "View Page",
+    "repository": "Repository"
+  },
+  "tweets": {
+    "f1": "🏎️ F1 is my passion: speed, strategy, and excitement every Sunday. Nothing beats a good race! 🔥🇲🇽",
+    "lucha": "🤼‍♂️ Lucha libre: masks, flying moves, and passion. A vibrant art in every corner of Mexico 🇲🇽🔥",
+    "edm": "🎧 Nothing like getting lost in the beats of electronic music. Festivals, lights, and drops that shake your soul 🔊✨",
+    "travel": "✈️ Traveling is living a thousand lives in one. Each destination tells a new story. Backpack ready, soul free 🌍🧳",
+    "barca": "🔵🔴 Being a Barça fan is more than football. It’s history, passion, and love for the beautiful game. Visca el Barça! 💙❤️⚽",
+    "gaming": "🎮 Video games aren’t just fun, they’re worlds where I get lost, compete, and enjoy nonstop 👾🔥"
+  },
+  "path": {
+    "languages": "Languages",
+    "experience": "Work Experience",
+    "education": "Education",
+    "certifications": "Certificates",
+    "cv": "Resume",
+    "pdf": "PDF",
+    "showMore": "Show more",
+    "showLess": "Show less"
+  },
+  "lang": {
+    "english": "English",
+    "spanish": "Spanish"
+  },
+  "level": {
+    "b2": "B2 (Upper Intermediate)",
+    "c2": "C2 (Native)"
+  },
+  "roles": {
+    "paypal": "Customer Solutions Agent",
+    "teleperformance": "Team Leader / Customer Service Agent"
+  },
+  "periods": {
+    "paypal": "July 2023 – March 2025",
+    "teleperformance": "August 2019 – June 2023",
+    "utel": "February 2022 – Present"
+  },
+  "jobs": {
+    "paypal": "Customer solutions agent at a global fintech company, resolving digital payment issues and enhancing customer experience.",
+    "teleperformance": "Supervisor and agent at a global BPO, supporting U.S. banking clients and food delivery app customers."
+  },
+  "education": {
+    "utel": "Bachelor’s Degree in IT Administration"
+  },
+  "certs": {
+    "webdb": "Web Development & Databases",
+    "reactfirebase": "React & Firebase",
+    "mastercodigo": "Master in Coding",
+    "diplomadoanalisis": "International Diploma in Computer Systems Analysis"
+  }
+}

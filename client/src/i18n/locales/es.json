@@ -1,0 +1,82 @@
+{
+  "theme_light": "Tema Claro",
+  "theme_dark": "Tema Oscuro",
+  "language": "Idioma",
+  "language_short": "ES",
+  "tabs": {
+    "projects": "Proyectos",
+    "about_me": "Sobre mí",
+    "career": "Trayectoria",
+    "objective": "Hoja de ruta",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "location": "CDMX",
+    "country": "México",
+    "time": "(UTC-6)",
+    "remote": "Remoto",
+    "onsite": "Presencial",
+    "description": "Diseño experiencias digitales limpias, rápidas y centradas en el usuario."
+  },
+  "projects_section": {
+    "title_v1": "Portafolio V1",
+    "desc_v1": "Este es mi primer portafolio, una muestra del inicio de mi camino como desarrollador.",
+    "title_wedding": "Invitación de boda",
+    "desc_wedding": "Muestra a los invitados todos los detalles del evento y les permite confirmar su asistencia.",
+    "title_v2": "Portafolio V2",
+    "desc_v2": "Una versión mejorada de mi portafolio, con una mejor estructura, un diseño moderno y componentes reutilizables.",
+    "title_birthday": "Invitación de cumpleaños",
+    "desc_birthday": "Muestra a los invitados todos los detalles del evento y les permite confirmar su asistencia.",
+    "view_page": "Ver Página",
+    "repository": "Repositorio"
+  },
+  "tweets": {
+    "f1": "🏎️ La F1 es mi pasión: velocidad, estrategia y emoción cada domingo. ¡Nada como una buena carrera! 🔥🇲🇽",
+    "lucha": "🤼‍♂️ Lucha libre: máscaras, vuelos y pasión. Un arte que vibra en cada rincón de México 🇲🇽🔥",
+    "edm": "🎧 Nada como perderse en los beats de la música electrónica. Festival, luces y drops que te sacuden el alma 🔊✨",
+    "travel": "✈️ Viajar es vivir mil vidas en una. Cada destino, una historia nueva. Mochila lista y alma libre 🌍🧳",
+    "barca": "🔵🔴 Ser del Barça es más que fútbol. Es historia, pasión y amor por el buen juego. Visca el Barça! 💙❤️⚽",
+    "gaming": "🎮 Los videojuegos no son solo entretenimiento, son mundos donde me pierdo, compito y me divierto sin parar 👾🔥"
+  },
+  "path": {
+    "languages": "Idiomas",
+    "experience": "Experiencia Laboral",
+    "education": "Educación",
+    "certifications": "Certificados",
+    "cv": "CV",
+    "pdf": "PDF",
+    "showMore": "Mostrar más",
+    "showLess": "Mostrar menos"
+  },
+  "lang": {
+    "english": "Inglés",
+    "spanish": "Español"
+  },
+  "level": {
+    "b2": "B2 (Intermedio Alto)",
+    "c2": "C2 (Nativo)"
+  },
+  "roles": {
+    "paypal": "Agente de soluciones para clientes",
+    "teleperformance": "Jefe de equipo / Agente de atención"
+  },
+  "periods": {
+    "paypal": "Julio 2023 - Marzo 2025",
+    "teleperformance": "Agosto 2019 - Junio 2023",
+    "utel": "Febrero 2022 - Actualidad"
+  },
+  "jobs": {
+    "paypal": "Agente de soporte en empresa Fintech global, resolviendo incidencias de pagos digitales y optimizando la experiencia del cliente.",
+    "teleperformance": "Supervisor y agente en BPO global, gestionando soporte para banca estadounidense y atención a clientes de app de entrega de comida."
+  },
+  "education": {
+    "utel": "Licenciatura en Administración de Tecnologías de la Información"
+  },
+  "certs": {
+    "webdb": "Desarrollo web & Bases de datos",
+    "reactfirebase": "React & Firebase",
+    "mastercodigo": "Master en código",
+    "diplomadoanalisis": "Diplomado Internacional en Análisis en sistemas computacionales"
+  }
+}
