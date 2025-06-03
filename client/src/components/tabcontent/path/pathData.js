@@ -25,7 +25,7 @@ export const languages = [
     },
     {
       company: "Teleperformance",
-      role: "Supervisor - Agente de atención",
+      role: "Jefe de equipo / Agente de atención",
       period: "Agosto 2019 - Junio 2023",
       details:
         "Supervisor y agente en BPO global, gestionando soporte para banca estadounidense y atención a clientes de app de entrega de comida.",
@@ -42,11 +42,25 @@ export const languages = [
   
   export const certifications = [
     {
-      name: "Certificación en React",
+      name: "Desarrollo web con HTML5, CSS3, JS AJAX, PHP y MySQL",
       issuer: "Udemy",
-      year: "2023",
+      year: "2024",
       viewUrl: "/certificados/react-certificado.pdf",
       downloadUrl: "/certificados/react-certificado.pdf",
+    },
+    {
+      name: "React & Firebase",
+      issuer: "Udemy",
+      year: "2024",
+      viewUrl: "/certificados/frontend-certificado.pdf",
+      downloadUrl: "/certificados/frontend-certificado.pdf",
+    },
+    {
+      name: "Diplomado Internacional en Analisis en sistemas computacionales",
+      issuer: "UTEL",
+      year: "2025",
+      viewUrl: "/certificados/frontend-certificado.pdf",
+      downloadUrl: "/certificados/frontend-certificado.pdf",
     },
     {
       name: "Frontend Developer",

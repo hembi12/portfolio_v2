@@ -8,6 +8,7 @@ import {
   FaEllipsisH,
 } from "react-icons/fa";
 import { HiCheckBadge } from "react-icons/hi2";
+import ProfileLego from "../../../assets/Profile_Lego.png"; // Ajusta si usas alias
 
 export default function TweetCard({ tweet }) {
   const { title, handle, time, description, icons } = tweet;
@@ -15,18 +16,22 @@ export default function TweetCard({ tweet }) {
   return (
     <div
       className="w-[360px] bg-gradient-to-br from-[#0b0e1a] via-[#1a1f2f] to-[#0b0e1a] 
-          border border-[#1a2a4a] 
-          rounded-2xl 
-          shadow-xl shadow-black/30 p-4 space-y-2 relative"
+        border border-[#1a2a4a] 
+        rounded-2xl 
+        shadow-xl shadow-black/30 p-4 space-y-2 relative"
     >
       {/* Icono de tres puntos */}
-      <div className="absolute top-4 right-4 text-neutral-400 hover:text-neutral-100 cursor-pointer">
+      <div className="absolute top-4 right-4 text-neutral-400 hover:text-sky-500 cursor-pointer">
         <FaEllipsisH />
       </div>
 
-      {/* Header: perfil, verificado, handle */}
+      {/* Header: imagen perfil, nombre, verificado, handle */}
       <div className="flex items-center space-x-2">
-        <div className="w-10 h-10 bg-neutral-500 rounded-full" />
+        <img
+          src={ProfileLego}
+          alt="Perfil"
+          className="w-10 h-10 rounded-full object-cover"
+        />
         <div>
           <div className="flex items-center gap-1 text-neutral-300 font-bold">
             {title}

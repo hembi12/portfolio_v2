@@ -1,6 +1,6 @@
 export default function Tabs({ tabs, tab, setTab, tooltip, showTooltip }) {
     return (
-      <nav className="flex justify-center items-center gap-6 border-b border-neutral-300 pb-4 mb-8 flex-wrap sm:flex-nowrap">
+      <nav className="flex justify-center items-center gap-6 border-b border-neutral-400 pb-4 mb-8 flex-wrap sm:flex-nowrap">
         {tabs.map((tabItem) => (
           <div key={tabItem.id} className="relative group">
             <button
@@ -11,7 +11,7 @@ export default function Tabs({ tabs, tab, setTab, tooltip, showTooltip }) {
               className={`flex items-center gap-2 px-3 py-2 text-sm transition border-b-2 ${
                 tab === tabItem.id
                   ? "border-amber-400 text-amber-400"
-                  : "border-transparent text-neutral-300 hover:text-amber-400"
+                  : "border-transparent text-neutral-200 hover:text-amber-400"
               }`}
             >
               <tabItem.icon size={18} />

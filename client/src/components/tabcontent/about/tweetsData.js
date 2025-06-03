@@ -1,7 +1,7 @@
 const tweets = [
   {
-    title: "Fan de la F1",
-    handle: "@f1hector",
+    title: "hembi",
+    handle: "@hembi12",
     time: "3h",
     description:
       "🏎️ La F1 es mi pasión: velocidad, estrategia y emoción cada domingo. ¡Nada como una buena carrera! 🔥🇲🇽",
@@ -13,8 +13,8 @@ const tweets = [
     },
   },
   {
-    title: "Fan de la Lucha Libre",
-    handle: "@wrestlinghector",
+    title: "hembi",
+    handle: "@hembi12",
     time: "1h",
     description:
       "🤼‍♂️ Lucha libre: máscaras, vuelos y pasión. Un arte que vibra en cada rincón de México 🇲🇽🔥",
@@ -26,8 +26,8 @@ const tweets = [
     },
   },
   {
-    title: "Amante del EDM",
-    handle: "@edmhector",
+    title: "hembi",
+    handle: "@hembi12",
     time: "6h",
     description:
       "🎧 Nada como perderse en los beats de la música electrónica. Festival, luces y drops que te sacuden el alma 🔊✨",
@@ -39,8 +39,8 @@ const tweets = [
     },
   },
   {
-    title: "Viajero Empedernido",
-    handle: "@hectortrotamundos",
+    title: "hembi",
+    handle: "@hembi12",
     time: "9h",
     description:
       "✈️ Viajar es vivir mil vidas en una. Cada destino, una historia nueva. Mochila lista y alma libre 🌍🧳",
@@ -52,8 +52,8 @@ const tweets = [
     },
   },
   {
-    title: "Culé de Corazón",
-    handle: "@barcahector",
+    title: "hembi",
+    handle: "@hembi12",
     time: "2h",
     description:
       "🔵🔴 Ser del Barça es más que fútbol. Es historia, pasión y amor por el buen juego. Visca el Barça! 💙❤️⚽",
@@ -65,8 +65,8 @@ const tweets = [
     },
   },
   {
-    title: "Gamer Pro",
-    handle: "@gamerhector",
+    title: "hembi",
+    handle: "@hembi12",
     time: "5h",
     description:
       "🎮 Los videojuegos no son solo entretenimiento, son mundos donde me pierdo, compito y me divierto sin parar 👾🔥",

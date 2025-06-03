@@ -4,10 +4,6 @@ import {
   FiDownload,
   FiChevronDown,
   FiChevronUp,
-  FiBriefcase,
-  FiBook,
-  FiAward,
-  FiGlobe,
 } from "react-icons/fi";
 import { experience, education, certifications, languages } from "./pathData";
 
@@ -24,8 +20,8 @@ function ExperienceItem({ job }) {
           hover:scale-105 p-5"
     >
       <h3 className="text-xl font-semibold text-neutral-100 mb-1">
-        {job.role}
-        <span className="text-neutral-400 font-normal"> @ {job.company}</span>
+        {job.company}
+        <span className="text-neutral-400 font-normal"> - {job.role}</span>
       </h3>
       <p className="text-sm text-neutral-400 mb-2">{job.period}</p>
       <button
@@ -56,8 +52,8 @@ export default function Path() {
     <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 space-y-20">
       {/* Idiomas */}
       <div>
-        <h2 className="text-3xl font-extrabold text-amber-400 mb-8 flex items-center gap-2">
-          <FiGlobe className="text-amber-400 text-3xl" /> Idiomas
+        <h2 className="text-3xl font-extrabold text-amber-400 mb-8">
+          Idiomas
         </h2>
         <ul className="grid gap-6 sm:grid-cols-2">
           {languages.map((lang, idx) => (
@@ -81,14 +77,14 @@ export default function Path() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-amber-400 hover:underline"
                 >
-                  <FiEye className="text-base" /> Ver PDF
+                  <FiEye className="text-base" /> PDF
                 </a>
                 <a
                   href={lang.downloadUrl}
                   download
                   className="flex items-center gap-2 text-sm text-amber-400 hover:underline"
                 >
-                  <FiDownload className="text-base" /> Descargar PDF
+                  <FiDownload className="text-base" /> PDF
                 </a>
               </div>
             </li>
@@ -100,23 +96,22 @@ export default function Path() {
       <div>
         <div className="mb-8">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <h2 className="text-3xl font-extrabold text-amber-400 flex items-center gap-2">
-              <FiBriefcase className="text-amber-400 text-3xl" /> Experiencia
-              Laboral
+            <h2 className="text-3xl font-extrabold text-amber-400">
+              Experiencia Laboral
             </h2>
             <div className="flex gap-4 justify-center sm:justify-end">
               <a
                 href="/cv-online"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-sm text-neutral-100 hover:text-amber-400 hover:underline gap-2 transition"
+                className="flex items-center text-sm text-amber-400 hover:underline gap-2 transition"
               >
                 <FiEye className="text-base" /> CV
               </a>
               <a
                 href="/cv.pdf"
                 download
-                className="flex items-center text-sm text-neutral-100 hover:text-amber-400 hover:underline gap-2 transition"
+                className="flex items-center text-sm text-amber-400 hover:underline gap-2 transition"
               >
                 <FiDownload className="text-base" /> CV
               </a>
@@ -132,8 +127,8 @@ export default function Path() {
 
       {/* Educación */}
       <div>
-        <h2 className="text-3xl font-extrabold text-amber-400 mb-8 flex items-center gap-2">
-          <FiBook className="text-amber-400 text-3xl" /> Educación
+        <h2 className="text-3xl font-extrabold text-amber-400 mb-8">
+          Educación
         </h2>
         <ul className="grid gap-6">
           {education.map((edu, idx) => (
@@ -158,8 +153,8 @@ export default function Path() {
 
       {/* Certificados */}
       <div>
-        <h2 className="text-3xl font-extrabold text-amber-400 mb-8 flex items-center gap-2">
-          <FiAward className="text-amber-400 text-3xl" /> Certificados
+        <h2 className="text-3xl font-extrabold text-amber-400 mb-8">
+          Certificados
         </h2>
         <ul className="grid gap-6 sm:grid-cols-2">
           {certifications.map((cert, idx) => (
@@ -184,14 +179,14 @@ export default function Path() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-amber-400 hover:underline"
                 >
-                  <FiEye className="text-base" /> Ver PDF
+                  <FiEye className="text-base" /> PDF
                 </a>
                 <a
                   href={cert.downloadUrl}
                   download
                   className="flex items-center gap-2 text-sm text-amber-400 hover:underline"
                 >
-                  <FiDownload className="text-base" /> Descargar PDF
+                  <FiDownload className="text-base" /> PDF
                 </a>
               </div>
             </li>

@@ -44,18 +44,24 @@ export default function Contact() {
     }
 
     if (message.length < 10) {
-      showToastMessage("error", "El mensaje debe tener al menos 10 caracteres.");
+      showToastMessage(
+        "error",
+        "El mensaje debe tener al menos 10 caracteres."
+      );
       return;
     }
 
     setLoading(true);
 
     try {
-      const res = await fetch("https://portfolio-v2-u9wg.onrender.com/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, subject, message }),
-      });
+      const res = await fetch(
+        "https://portfolio-v2-u9wg.onrender.com/contact",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, subject, message }),
+        }
+      );
 
       const { message: resultMessage } = await res.json();
 
@@ -63,7 +69,10 @@ export default function Contact() {
         showToastMessage("success", resultMessage);
         form.reset();
       } else {
-        showToastMessage("error", resultMessage || "Error al enviar el mensaje.");
+        showToastMessage(
+          "error",
+          resultMessage || "Error al enviar el mensaje."
+        );
       }
     } catch (error) {
       console.error("Error:", error);
@@ -74,7 +83,14 @@ export default function Contact() {
   };
 
   return (
-    <div className="max-w-xl mx-auto bg-gradient-to-br from-[#1a1a1a] via-[#0d0d0d] to-[#1f1f1f] border border-[#2a2a2a] rounded-xl shadow-inner shadow-black/40 ring-1 ring-[#2e2e2e] p-6">
+    <div
+      className="max-w-xl mx-auto bg-gradient-to-br from-[#0b0e1a] via-[#1a1f2f] to-[#0b0e1a] 
+          border border-[#1a2a4a] 
+          rounded-3xl 
+          shadow-xl shadow-black/30 
+          transition duration-300
+          ring-1 ring-[#2e2e2e] p-6"
+    >
       <ContactHeader />
       <ContactForm loading={loading} sendEmail={sendEmail} />
       <ContactInfo />
