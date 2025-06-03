@@ -17,7 +17,7 @@ const tweets = [
     handle: "@wrestlinghector",
     time: "1h",
     description:
-      "🤼‍♂️ La lucha libre es arte en el ring. Máscaras, vuelos y pura pasión mexicana 🇲🇽🔥",
+      "🤼‍♂️ Lucha libre: máscaras, vuelos y pasión. Un arte que vibra en cada rincón de México 🇲🇽🔥",
     icons: {
       comments: 25,
       retweets: 31,

@@ -18,10 +18,10 @@ function ExperienceItem({ job }) {
     <li
       className="bg-gradient-to-br from-[#0b0e1a] via-[#1a1f2f] to-[#0b0e1a] 
           border border-[#1a2a4a] 
-          rounded-3xl 
+          rounded-2xl 
           shadow-xl shadow-black/30 
           transition duration-300
-          hover:scale-105  rounded-2xl p-5"
+          hover:scale-105 p-5"
     >
       <h3 className="text-xl font-semibold text-neutral-100 mb-1">
         {job.role}
@@ -65,10 +65,10 @@ export default function Path() {
               key={idx}
               className="bg-gradient-to-br from-[#0b0e1a] via-[#1a1f2f] to-[#0b0e1a] 
           border border-[#1a2a4a] 
-          rounded-3xl 
+          rounded-2xl 
           shadow-xl shadow-black/30 
           transition duration-300
-          hover:scale-105  rounded-2xl p-5"
+          hover:scale-105 p-5"
             >
               <h3 className="text-xl font-semibold text-neutral-100 mb-1">
                 {lang.language}
@@ -141,10 +141,10 @@ export default function Path() {
               key={idx}
               className="bg-gradient-to-br from-[#0b0e1a] via-[#1a1f2f] to-[#0b0e1a] 
           border border-[#1a2a4a] 
-          rounded-3xl 
+          rounded-2xl 
           shadow-xl shadow-black/30 
           transition duration-300
-          hover:scale-105  rounded-2xl p-5"
+          hover:scale-105 p-5"
             >
               <h3 className="text-xl font-semibold text-neutral-100 mb-1">
                 {edu.degree}
@@ -167,10 +167,10 @@ export default function Path() {
               key={idx}
               className="bg-gradient-to-br from-[#0b0e1a] via-[#1a1f2f] to-[#0b0e1a] 
           border border-[#1a2a4a] 
-          rounded-3xl 
+          rounded-2xl 
           shadow-xl shadow-black/30 
           transition duration-300
-          hover:scale-105  rounded-2xl p-5"
+          hover:scale-105 p-5"
             >
               <h3 className="text-xl font-semibold text-neutral-100 mb-1">
                 {cert.name}
