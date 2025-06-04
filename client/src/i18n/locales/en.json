@@ -78,5 +78,45 @@
     "reactfirebase": "React & Firebase",
     "mastercodigo": "Master in Coding",
     "diplomadoanalisis": "International Diploma in Computer Systems Analysis"
+  },
+  "objective": {
+    "description": "Below is a structured view of my journey as a developer. It includes what I’ve already accomplished, the modules I’m currently taking in a full stack bootcamp, and the goals I aim to achieve in the short and medium term.",
+    "seeMore": "See more",
+    "seeLess": "See less",
+    "cards": [
+      {
+        "title": "Completed",
+        "description": "Solid foundations gained via self-taught learning and hands-on personal projects. ",
+        "highlights": [
+          "Mastery of HTML and CSS for responsive websites",
+          "Basic use of Git and GitHub for version control",
+          "Strong JavaScript foundations and DOM manipulation",
+          "Knowledge of data structures and algorithms (ES6+)",
+          "Active participation in tech communities and personal projects"
+        ]
+      },
+      {
+        "title": "In Progress",
+        "description": "Advanced modules of the full stack bootcamp, strengthening technical and teamwork skills.",
+        "highlights": [
+          "Frontend development with React, Hooks, and Context API",
+          "Best practices with tokens, session management, and testing",
+          "Building RESTful APIs with Node.js and Express",
+          "Using MongoDB and SQL for relational and NoSQL databases",
+          "Implementing MVC architecture and JWT authentication"
+        ]
+      },
+      {
+        "title": "Upcoming",
+        "description": "Focus on key technologies to scale real-world solutions and take on production-level challenges.",
+        "highlights": [
+          "Developing fullstack MVPs using agile methodologies (SCRUM)",
+          "Setting up CI/CD environments with Docker and continuous integration",
+          "Web app performance optimization and security",
+          "Consuming external APIs and handling advanced async logic (EventLoop)",
+          "Preparing to contribute to open source projects"
+        ]
+      }
+    ]
   }
 }
