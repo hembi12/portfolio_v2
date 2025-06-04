@@ -211,5 +211,14 @@
     "info": {
       "prefix": "También puedes escribirme directamente a"
     }
+  },
+  "seo": {
+    "title": "Héctor Martil - Portafolio V2",
+    "description": "Portafolio moderno de desarrollador web con experiencia en React, Tailwind, Javascript y más.",
+    "keywords": "Portafolio, Desarrollador Web, React, Frontend, Tailwind CSS, JavaScript",
+    "og_title": "Portafolio de Héctor Martil",
+    "og_description": "Explora mis proyectos y trayectoria como desarrollador web.",
+    "twitter_title": "Portafolio de Héctor Martil",
+    "twitter_description": "Explora mis proyectos, habilidades y trayectoria como desarrollador."
   }
 }

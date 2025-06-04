@@ -211,5 +211,14 @@
     "info": {
       "prefix": "You can also write to me directly at"
     }
+  },
+  "seo": {
+    "title": "Héctor Martil - Portfolio V2",
+    "description": "Modern web developer portfolio with experience in React, Tailwind, Javascript and more.",
+    "keywords": "Portfolio, Web Developer, React, Frontend, Tailwind CSS, JavaScript",
+    "og_title": "Héctor Martil's Portfolio",
+    "og_description": "Explore my projects and career as a web developer.",
+    "twitter_title": "Héctor Martil's Portfolio",
+    "twitter_description": "Explore my projects, skills, and developer journey."
   }
 }
