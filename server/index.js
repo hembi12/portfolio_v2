@@ -7,7 +7,7 @@ const app = express();
 
 // ✅ Permitir solo solicitudes desde tu dominio en Vercel
 app.use(cors({
-  origin: "https://www.hectormartil.dev."
+  origin: "https://www.hectormartil.dev/"
 }));
 
 app.use(express.json());
