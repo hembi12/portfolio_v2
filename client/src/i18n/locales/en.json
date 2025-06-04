@@ -118,5 +118,92 @@
         ]
       }
     ]
+  },
+  "contact": {
+    "header": {
+      "title": "Shall we work together?",
+      "description": "I’m open to new job opportunities or exciting collaborations. If you have a proposal, don’t hesitate to write me."
+    },
+    "form": {
+      "name": "Name:",
+      "email": "Email:",
+      "subject": "Subject:",
+      "message": "Message:",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "youremail@example.com",
+      "messagePlaceholder": "Write your message...",
+      "subjectPlaceholder": "Select a subject",
+      "subjectJob": "Job offer",
+      "subjectCollab": "Collaboration",
+      "subjectOther": "Other",
+      "accept": "I accept the",
+      "privacyPolicy": "privacy policy",
+      "send": "Send message",
+      "sending": "Sending..."
+    },
+    "toast": {
+      "error_name": "Please enter a valid name.",
+      "error_email": "Invalid email.",
+      "error_subject": "Please select a subject.",
+      "error_message": "Message must be at least 10 characters long.",
+      "success": "Message sent successfully.",
+      "fail": "An error occurred while sending the message."
+    },
+    "modal": {
+      "title": "Privacy Policy",
+      "updated": "Last updated:",
+      "sections": {
+        "1": {
+          "title": "1. Information Collected",
+          "content": "When you use the contact form on this site, the following personal data may be collected:",
+          "list": [
+            "Full name",
+            "Email address",
+            "Subject and content of the message",
+            "IP address (automatically by the server)"
+          ]
+        },
+        "2": {
+          "title": "2. Purpose of Data Processing",
+          "content": "The data collected is used exclusively to:",
+          "list": [
+            "Respond to inquiries or requests",
+            "Follow up on possible collaborations, job opportunities or contact proposals"
+          ],
+          "note": "It will not be used for advertising purposes nor shared with third parties without your explicit consent."
+        },
+        "3": {
+          "title": "3. Data Protection",
+          "content": "This site uses appropriate technical and organizational measures to protect your personal data. Communication is encrypted via TLS (HTTPS)."
+        },
+        "4": {
+          "title": "4. User Rights",
+          "content": "You have the right to:",
+          "list": [
+            "Access your personal data",
+            "Request its correction or deletion",
+            "Object to data processing",
+            "Request data portability"
+          ],
+          "note": "You can exercise these rights by contacting the email address below."
+        },
+        "5": {
+          "title": "5. Data Retention",
+          "content": "Data will be retained only as long as necessary to fulfill its purpose and will then be securely deleted."
+        },
+        "6": {
+          "title": "6. External Links",
+          "content": "This site may contain links to other sites. We are not responsible for their privacy policies or content."
+        },
+        "7": {
+          "title": "7. Contact",
+          "content": "For questions or to exercise your rights, you can write to:"
+        }
+      },
+      "close_button": "Close"
+    },
+    "info": {
+      "prefix": "You can also write to me directly at"
+    }
   }
 }

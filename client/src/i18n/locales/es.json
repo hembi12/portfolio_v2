@@ -118,5 +118,92 @@
         ]
       }
     ]
+  },
+  "contact": {
+    "header": {
+      "title": "¿Trabajamos juntos?",
+      "description": "Estoy abierto a nuevas oportunidades laborales o colaboraciones interesantes. Si tienes una propuesta, no dudes en escribirme."
+    },
+    "form": {
+      "name": "Nombre:",
+      "email": "Email:",
+      "subject": "Asunto:",
+      "message": "Mensaje:",
+      "namePlaceholder": "Tu nombre",
+      "emailPlaceholder": "tucorreo@ejemplo.com",
+      "messagePlaceholder": "Escribe tu mensaje...",
+      "subjectPlaceholder": "Selecciona un asunto",
+      "subjectJob": "Oferta laboral",
+      "subjectCollab": "Colaboración",
+      "subjectOther": "Otro",
+      "accept": "Acepto la",
+      "privacyPolicy": "política de privacidad",
+      "send": "Enviar mensaje",
+      "sending": "Enviando..."
+    },
+    "toast": {
+      "error_name": "Por favor ingresa un nombre válido.",
+      "error_email": "Correo no válido.",
+      "error_subject": "Selecciona un asunto.",
+      "error_message": "El mensaje debe tener al menos 10 caracteres.",
+      "success": "Mensaje enviado con éxito.",
+      "fail": "Ocurrió un error al enviar el mensaje."
+    },
+    "modal": {
+      "title": "Política de Privacidad",
+      "updated": "Última actualización:",
+      "sections": {
+        "1": {
+          "title": "1. Información que se recopila",
+          "content": "Cuando utilizas el formulario de contacto de este sitio web, se pueden recopilar los siguientes datos personales:",
+          "list": [
+            "Nombre completo",
+            "Dirección de correo electrónico",
+            "Asunto y contenido del mensaje",
+            "Dirección IP (automáticamente por el servidor)"
+          ]
+        },
+        "2": {
+          "title": "2. Finalidad del tratamiento",
+          "content": "Los datos recopilados se utilizan exclusivamente para:",
+          "list": [
+            "Responder a consultas o solicitudes",
+            "Dar seguimiento a posibles colaboraciones, oportunidades laborales o propuestas de contacto"
+          ],
+          "note": "No se utilizarán con fines publicitarios ni se compartirán con terceros sin tu consentimiento explícito."
+        },
+        "3": {
+          "title": "3. Protección de la información",
+          "content": "Este sitio utiliza medidas técnicas y organizativas adecuadas para proteger tus datos personales. La comunicación está cifrada mediante TLS (HTTPS)."
+        },
+        "4": {
+          "title": "4. Derechos del usuario",
+          "content": "Tienes derecho a:",
+          "list": [
+            "Acceder a tus datos personales",
+            "Solicitar su rectificación o eliminación",
+            "Oponerte al tratamiento de tus datos",
+            "Solicitar la portabilidad de tus datos"
+          ],
+          "note": "Puedes ejercer estos derechos contactando directamente al correo electrónico indicado abajo."
+        },
+        "5": {
+          "title": "5. Conservación de los datos",
+          "content": "Los datos se conservarán solo el tiempo necesario para cumplir su finalidad, luego serán eliminados de forma segura."
+        },
+        "6": {
+          "title": "6. Enlaces externos",
+          "content": "Este sitio puede contener enlaces a otros sitios. No somos responsables por sus políticas de privacidad ni por su contenido."
+        },
+        "7": {
+          "title": "7. Contacto",
+          "content": "Para dudas o ejercer tus derechos, puedes escribir a:"
+        }
+      },
+      "close_button": "Cerrar"
+    },
+    "info": {
+      "prefix": "También puedes escribirme directamente a"
+    }
   }
 }

@@ -1,15 +1,16 @@
-// src/components/contact/ContactHeader.jsx
+import { useTranslation } from "react-i18next";
+
 export default function ContactHeader() {
-    return (
-      <>
-        <h2 className="text-2xl font-semibold text-amber-400 mb-4">
-          ¿Trabajamos juntos?
-        </h2>
-        <p className="text-gray-300 mb-6">
-          Estoy abierto a nuevas oportunidades laborales o
-          colaboraciones interesantes. Si tienes una propuesta, no dudes en
-          escribirme.
-        </p>
-      </>
-    );
-  }
+  const { t } = useTranslation();
+
+  return (
+    <>
+      <h2 className="text-2xl font-semibold text-amber-400 mb-4">
+        {t("contact.header.title")}
+      </h2>
+      <p className="text-gray-300 mb-6">
+        {t("contact.header.description")}
+      </p>
+    </>
+  );
+}
