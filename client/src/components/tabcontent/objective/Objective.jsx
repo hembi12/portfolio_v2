@@ -6,12 +6,14 @@ import { roadmap } from "../objective/objectiveData";
 
 export default function ObjectiveKanban() {
   const [expanded, setExpanded] = useState(false);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language;
+  const sectionId = lang === "es" ? "objetivo" : "objective";
 
   const toggleAll = () => setExpanded((prev) => !prev);
 
   return (
-    <section className="w-full max-w-6xl mx-auto px-4">
+    <section id={sectionId} className="w-full max-w-6xl mx-auto px-4">
       <p className="text-center text-sm sm:text-base text-neutral-300 max-w-3xl mx-auto mb-10">
         {t("objective.description")}
       </p>
@@ -41,7 +43,7 @@ export default function ObjectiveKanban() {
                 </p>
 
                 <ul className="space-y-3">
-                  {card.highlights.slice(0, 3).map((item, i) => (
+                  {visibleHighlights.map((item, i) => (
                     <li key={i} className="text-sm text-white flex items-start">
                       <span className="text-green-400 mr-2">✓</span>
                       {t(`objective.cards.${idx}.highlights.${i}`)}

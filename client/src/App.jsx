@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Briefcase, User, Mail, Layers } from "lucide-react";
-import { FaSitemap } from "react-icons/fa";
+import { GoGoal } from "react-icons/go";
 import Hero from "./components/hero/Hero";
 import Tabs from "./components/tabs/Tabs";
 import TabContent from "./components/TabContent";
@@ -32,7 +32,7 @@ export default function App() {
     { id: "proyectos", label: t("tabs.projects"), icon: Briefcase },
     { id: "sobremi", label: t("tabs.about_me"), icon: User },
     { id: "trayectoria", label: t("tabs.career"), icon: Layers },
-    { id: "objetivo", label: t("tabs.objective"), icon: FaSitemap },
+    { id: "objetivo", label: t("tabs.objective"), icon: GoGoal },
     { id: "contacto", label: t("tabs.contact"), icon: Mail },
   ];
 

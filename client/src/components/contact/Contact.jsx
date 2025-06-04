@@ -10,7 +10,9 @@ export default function Contact() {
   const [toastMessage, setToastMessage] = useState("");
   const [toastType, setToastType] = useState("success");
   const [showToast, setShowToast] = useState(false);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language;
+  const sectionId = lang === "es" ? "contacto" : "contact";
 
   const showToastMessage = (type, message) => {
     setToastType(type);
@@ -28,7 +30,6 @@ export default function Contact() {
     const subject = form.user_subject.value;
     const message = form.message.value.trim();
 
-    // Validaciones
     if (name.length < 2) {
       showToastMessage("error", t("contact.errors.invalidName"));
       return;
@@ -75,18 +76,20 @@ export default function Contact() {
   };
 
   return (
-    <div
-      className="max-w-xl mx-auto bg-gradient-to-br from-[#0b0e1a] via-[#1a1f2f] to-[#0b0e1a] 
+    <section id={sectionId}>
+      <div
+        className="max-w-xl mx-auto bg-gradient-to-br from-[#0b0e1a] via-[#1a1f2f] to-[#0b0e1a] 
           border border-[#1a2a4a] 
           rounded-3xl 
           shadow-xl shadow-black/30 
           transition duration-300
           ring-1 ring-[#2e2e2e] p-6"
-    >
-      <ContactHeader />
-      <ContactForm loading={loading} sendEmail={sendEmail} />
-      <ContactInfo />
-      {showToast && <Toast message={toastMessage} type={toastType} />}
-    </div>
+      >
+        <ContactHeader />
+        <ContactForm loading={loading} sendEmail={sendEmail} />
+        <ContactInfo />
+        {showToast && <Toast message={toastMessage} type={toastType} />}
+      </div>
+    </section>
   );
 }

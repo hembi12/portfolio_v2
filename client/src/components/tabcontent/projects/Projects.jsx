@@ -33,7 +33,9 @@ import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { projectsData } from "./projectsData";
 
 export default function Projects() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language;
+  const sectionId = lang === "es" ? "proyectos" : "projects";
 
   const iconMap = {
     mobile: {
@@ -109,7 +111,7 @@ export default function Projects() {
   };
 
   return (
-    <div className="grid gap-6 md:grid-cols-2">
+    <section id={sectionId} className="grid gap-6 md:grid-cols-2">
       {projectsData(t).map((project, idx) => (
         <div
           key={idx}
@@ -177,6 +179,6 @@ export default function Projects() {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 }

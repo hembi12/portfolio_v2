@@ -43,10 +43,12 @@ function ExperienceItem({ job }) {
 }
 
 export default function Path() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language;
+  const sectionId = lang === "es" ? "trayectoria" : "career";
 
   return (
-    <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 space-y-20">
+    <section id={sectionId} className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 space-y-20">
       {/* Idiomas */}
       <div>
         <h2 className="text-3xl font-extrabold text-amber-400 mb-8">

@@ -1,13 +1,17 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import SocialLinks from "../about/SocialLink";
 import TweetCard from "../about/TweetCard";
 import tweets from "./tweetsData";
 
 export default function AboutMe() {
   const [paused, setPaused] = useState(false);
+  const { i18n } = useTranslation();
+  const lang = i18n.language;
+  const sectionId = lang === "es" ? "sobremi" : "about";
 
   return (
-    <div className="max-w-full overflow-hidden space-y-6">
+    <section id={sectionId} className="max-w-full overflow-hidden space-y-6">
       {/* Redes sociales */}
       <SocialLinks />
 
@@ -48,6 +52,6 @@ export default function AboutMe() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
