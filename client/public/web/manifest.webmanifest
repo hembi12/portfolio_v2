@@ -1,20 +1,45 @@
 {
   "name": "Héctor Martil - Portafolio",
   "short_name": "Héctor Martil",
-  "icons": [
-    {
-      "src": "/web/icons8-dev-ios_filled-192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "/web/icons8-dev-ios_filled-512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0b0e1a",
-  "theme_color": "#26E07F"
+  "theme_color": "#26E07F",
+  "icons": [
+    {
+      "src": "/web/icons8-dev-ios-17-glyph-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/web/icons8-dev-ios-17-glyph-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/web/icons8-dev-ios-17-glyph-57.png",
+      "sizes": "57x57",
+      "type": "image/png"
+    },
+    {
+      "src": "/web/icons8-dev-ios-17-glyph-60.png",
+      "sizes": "60x60",
+      "type": "image/png"
+    },
+    {
+      "src": "/web/icons8-dev-ios-17-glyph-72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/web/icons8-dev-ios-17-glyph-76.png",
+      "sizes": "76x76",
+      "type": "image/png"
+    },
+    {
+      "src": "/web/icons8-dev-ios-17-glyph-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ]
 }
