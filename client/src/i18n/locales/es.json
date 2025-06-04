@@ -1,4 +1,5 @@
 {
+  "settings": "Ajustes",
   "theme_light": "Tema Claro",
   "theme_dark": "Tema Oscuro",
   "language": "Idioma",
@@ -29,7 +30,12 @@
     "title_birthday": "Invitación de cumpleaños",
     "desc_birthday": "Muestra a los invitados todos los detalles del evento y les permite confirmar su asistencia.",
     "view_page": "Ver Página",
-    "repository": "Repositorio"
+    "repository": "Repositorio",
+    "tooltip_mobile": "Responsive móvil",
+    "tooltip_tablet": "Responsive tablet",
+    "tooltip_desktop": "Responsive escritorio",
+    "tooltip_dark": "Modo oscuro",
+    "tooltip_translate": "Multiidioma"
   },
   "tweets": {
     "f1": "🏎️ La F1 es mi pasión: velocidad, estrategia y emoción cada domingo. ¡Nada como una buena carrera! 🔥🇲🇽",
@@ -80,7 +86,7 @@
     "diplomadoanalisis": "Diplomado Internacional en Análisis en sistemas computacionales"
   },
   "objective": {
-    "description": "A continuación, comparto una visión estructurada de mi camino como desarrollador...",
+    "description": "A continuación, comparto una visión estructurada de mi camino como desarrollador.",
     "seeMore": "Ver más",
     "seeLess": "Ver menos",
     "cards": [

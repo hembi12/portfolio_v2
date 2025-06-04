@@ -133,7 +133,7 @@ export default function Path() {
                 {t(edu.degreeKey)}
               </h3>
               <p className="text-sm text-neutral-400">{edu.institution}</p>
-              <p className="text-sm text-neutral-300 mt-1">{edu.period}</p>
+              <p className="text-sm text-neutral-300 mt-1">{t(edu.periodKey)}</p>
             </li>
           ))}
         </ul>

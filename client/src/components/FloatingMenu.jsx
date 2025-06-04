@@ -5,7 +5,12 @@ import { MdLightMode, MdDarkMode } from "react-icons/md";
 import { IoMdSettings } from "react-icons/io";
 import { useTranslation } from "react-i18next";
 
-export default function FloatingMenu({ darkMode, setDarkMode, language, setLanguage }) {
+export default function FloatingMenu({
+  darkMode,
+  setDarkMode,
+  language,
+  setLanguage,
+}) {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const { t, i18n } = useTranslation();
@@ -60,9 +65,13 @@ export default function FloatingMenu({ darkMode, setDarkMode, language, setLangu
       <div className="relative" ref={menuRef}>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="bg-white dark:bg-amber-400 p-3 rounded-full shadow-md hover:scale-110 transition"
-          title="Ajustes"
+          className="relative group bg-white dark:bg-amber-400 p-3 rounded-full shadow-md hover:scale-110 transition"
         >
+          {/* Tooltip personalizado */}
+          <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded-md bg-blue-950 text-white opacity-0 group-hover:opacity-100 transition">
+            {t("settings")}
+          </div>
+
           <motion.div
             animate={{ rotate: menuOpen ? 180 : 0 }}
             transition={{ duration: 0.3 }}
@@ -86,7 +95,11 @@ export default function FloatingMenu({ darkMode, setDarkMode, language, setLangu
                 onClick={toggleTheme}
                 className="w-full px-4 py-2 flex justify-center items-center gap-2 hover:bg-amber-400 hover:text-blue-950 transition"
               >
-                {darkMode ? <MdLightMode className="w-4 h-4" /> : <MdDarkMode className="w-4 h-4" />}
+                {darkMode ? (
+                  <MdLightMode className="w-4 h-4" />
+                ) : (
+                  <MdDarkMode className="w-4 h-4" />
+                )}
                 <span className="text-sm">
                   {darkMode ? t("theme_light") : t("theme_dark")}
                 </span>

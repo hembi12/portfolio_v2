@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FiSend } from "react-icons/fi";
+import PrivacyModal from "./PrivacyModal";
 
 export default function ContactForm({ loading, sendEmail }) {
   const [showPrivacyModal, setShowPrivacyModal] = useState(false);
@@ -21,6 +22,7 @@ export default function ContactForm({ loading, sendEmail }) {
             placeholder={t("contact.form.namePlaceholder")}
           />
         </div>
+
         <div>
           <label className="block text-sm font-medium text-neutral-300">
             {t("contact.form.email")}
@@ -33,6 +35,7 @@ export default function ContactForm({ loading, sendEmail }) {
             placeholder={t("contact.form.emailPlaceholder")}
           />
         </div>
+
         <div>
           <label className="block text-sm font-medium text-neutral-300">
             {t("contact.form.subject")}
@@ -40,7 +43,7 @@ export default function ContactForm({ loading, sendEmail }) {
           <select
             name="user_subject"
             required
-            className="w-full mt-1 border border-neutral-400 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400 text-neutral-100"
+            className="w-full mt-1 border border-neutral-400 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400 text-neutral-100 bg-neutral-900"
             defaultValue=""
           >
             <option value="" disabled>
@@ -51,6 +54,7 @@ export default function ContactForm({ loading, sendEmail }) {
             <option value="otro">{t("contact.form.subjectOther")}</option>
           </select>
         </div>
+
         <div>
           <label className="block text-sm font-medium text-neutral-300">
             {t("contact.form.message")}
@@ -63,6 +67,7 @@ export default function ContactForm({ loading, sendEmail }) {
             placeholder={t("contact.form.messagePlaceholder")}
           ></textarea>
         </div>
+
         <div className="flex items-start gap-2 text-sm text-neutral-300">
           <input type="checkbox" id="privacy" required className="mt-1" />
           <label htmlFor="privacy">
@@ -76,6 +81,7 @@ export default function ContactForm({ loading, sendEmail }) {
             </button>
           </label>
         </div>
+
         <button
           type="submit"
           disabled={loading}
@@ -83,7 +89,8 @@ export default function ContactForm({ loading, sendEmail }) {
             loading ? "opacity-50 cursor-not-allowed" : ""
           }`}
         >
-          <FiSend /> {loading ? t("contact.form.sending") : t("contact.form.send")}
+          <FiSend />
+          {loading ? t("contact.form.sending") : t("contact.form.send")}
         </button>
       </form>
 

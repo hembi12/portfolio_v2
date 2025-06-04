@@ -1,4 +1,5 @@
 {
+  "settings": "Settings",
   "theme_light": "Light Theme",
   "theme_dark": "Dark Theme",
   "language": "Language",
@@ -29,7 +30,12 @@
     "title_birthday": "Birthday Invitation",
     "desc_birthday": "Shows guests all the event details and lets them RSVP.",
     "view_page": "View Page",
-    "repository": "Repository"
+    "repository": "Repository",
+    "tooltip_mobile": "Mobile responsive",
+    "tooltip_tablet": "Tablet responsive",
+    "tooltip_desktop": "Desktop responsive",
+    "tooltip_dark": "Dark Mode",
+    "tooltip_translate": "Multilanguage"
   },
   "tweets": {
     "f1": "🏎️ F1 is my passion: speed, strategy, and excitement every Sunday. Nothing beats a good race! 🔥🇲🇽",
@@ -80,7 +86,7 @@
     "diplomadoanalisis": "International Diploma in Computer Systems Analysis"
   },
   "objective": {
-    "description": "Below is a structured view of my journey as a developer. It includes what I’ve already accomplished, the modules I’m currently taking in a full stack bootcamp, and the goals I aim to achieve in the short and medium term.",
+    "description": "Below, I share a structured view of my journey as a developer.",
     "seeMore": "See more",
     "seeLess": "See less",
     "cards": [
