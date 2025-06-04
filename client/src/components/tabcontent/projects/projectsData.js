@@ -14,7 +14,7 @@ export const projectsData = (t) => [
         "Vercel",
       ],
       icons: ["mobile", "tablet", "desktop", "dark", "translate"],
-      liveUrl: "https://www.hectormartil.dev/",
+      liveUrl: "https://my-portfolio-pied-nine-63.vercel.app/",
       repoUrl: "https://github.com/hembi12/my-portfolio",
     },
     {
@@ -50,7 +50,7 @@ export const projectsData = (t) => [
         "Vercel",
       ],
       icons: ["mobile", "tablet", "desktop", "dark", "translate"],
-      liveUrl: "https://tiendadigital.store",
+      liveUrl: "https://www.hectormartil.dev/",
       repoUrl: "https://github.com/hembi12/portfolio_v2",
     },
     {
@@ -67,7 +67,7 @@ export const projectsData = (t) => [
         "Firebase",
       ],
       icons: ["mobile", "tablet", "desktop", "dark"],
-      liveUrl: "https://tareaspro.com",
-      repoUrl: "https://github.com/usuario/tareaspro",
+      liveUrl: "https://rsvp-cumple.web.app/",
+      repoUrl: "https://github.com/hembi12/cumplea-os_30",
     },
   ];

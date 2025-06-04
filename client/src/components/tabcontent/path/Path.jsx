@@ -48,7 +48,10 @@ export default function Path() {
   const sectionId = lang === "es" ? "trayectoria" : "career";
 
   return (
-    <section id={sectionId} className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 space-y-20">
+    <section
+      id={sectionId}
+      className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 space-y-20"
+    >
       {/* Idiomas */}
       <div>
         <h2 className="text-3xl font-extrabold text-amber-400 mb-8">
@@ -96,7 +99,7 @@ export default function Path() {
             </h2>
             <div className="flex gap-4 justify-center sm:justify-end">
               <a
-                href="/cv-online"
+                href="/hector_martil_cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-md text-amber-400 hover:underline gap-2 transition"
@@ -104,7 +107,7 @@ export default function Path() {
                 <FiEye className="text-base" /> {t("path.cv")}
               </a>
               <a
-                href="/cv.pdf"
+                href="/hector_martil_cv.pdf"
                 download
                 className="flex items-center text-md text-amber-400 hover:underline gap-2 transition"
               >
@@ -135,7 +138,9 @@ export default function Path() {
                 {t(edu.degreeKey)}
               </h3>
               <p className="text-sm text-neutral-400">{edu.institution}</p>
-              <p className="text-sm text-neutral-300 mt-1">{t(edu.periodKey)}</p>
+              <p className="text-sm text-neutral-300 mt-1">
+                {t(edu.periodKey)}
+              </p>
             </li>
           ))}
         </ul>
