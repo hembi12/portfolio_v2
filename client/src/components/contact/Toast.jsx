@@ -1,4 +1,3 @@
-// src/components/contact/Toast.jsx
 import { FaCheckCircle, FaExclamationCircle } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
@@ -19,7 +18,7 @@ export default function Toast({ messageKey, type = "success" }) {
           <FaExclamationCircle className="text-red-400 text-xl" />
         )}
         <span className={`font-medium ${isSuccess ? "text-white" : "text-red-300"}`}>
-          {t(`toast.${messageKey}`)}
+          {t(`contact.toast.${messageKey}`)}
         </span>
       </div>
     </div>
