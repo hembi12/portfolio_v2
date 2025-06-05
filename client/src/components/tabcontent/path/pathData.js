@@ -2,8 +2,8 @@ export const languages = [
   {
     languageKey: "lang.english",
     levelKey: "level.b2",
-    viewUrl: "/certificados/react-certificado.pdf",
-    downloadUrl: "/certificados/react-certificado.pdf",
+    viewUrl: "/ef_set_Certificate.pdf",
+    downloadUrl: "/ef_set_Certificate.pdf",
   },
   {
     languageKey: "lang.spanish",
