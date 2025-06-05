@@ -10,13 +10,13 @@ export default function Contact() {
   const [toastMessage, setToastMessage] = useState("");
   const [toastType, setToastType] = useState("success");
   const [showToast, setShowToast] = useState(false);
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const lang = i18n.language;
   const sectionId = lang === "es" ? "contacto" : "contact";
 
-  const showToastMessage = (type, message) => {
+  const showToastMessage = (type, messageKey) => {
     setToastType(type);
-    setToastMessage(message);
+    setToastMessage(messageKey);
     setShowToast(true);
     setTimeout(() => setShowToast(false), 3000);
   };
@@ -31,22 +31,22 @@ export default function Contact() {
     const message = form.message.value.trim();
 
     if (name.length < 2) {
-      showToastMessage("error", t("contact.errors.invalidName"));
+      showToastMessage("error", "error_name");
       return;
     }
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      showToastMessage("error", t("contact.errors.invalidEmail"));
+      showToastMessage("error", "error_email");
       return;
     }
 
     if (!subject) {
-      showToastMessage("error", t("contact.errors.missingSubject"));
+      showToastMessage("error", "error_subject");
       return;
     }
 
     if (message.length < 10) {
-      showToastMessage("error", t("contact.errors.shortMessage"));
+      showToastMessage("error", "error_message");
       return;
     }
 
@@ -62,14 +62,14 @@ export default function Contact() {
       const { message: resultMessage } = await res.json();
 
       if (res.ok) {
-        showToastMessage("success", t("contact.success"));
+        showToastMessage("success", "success");
         form.reset();
       } else {
-        showToastMessage("error", resultMessage || t("contact.errors.submitError"));
+        showToastMessage("error", "fail");
       }
     } catch (error) {
       console.error("Error:", error);
-      showToastMessage("error", t("contact.errors.networkError"));
+      showToastMessage("error", "fail");
     } finally {
       setLoading(false);
     }
@@ -88,7 +88,7 @@ export default function Contact() {
         <ContactHeader />
         <ContactForm loading={loading} sendEmail={sendEmail} />
         <ContactInfo />
-        {showToast && <Toast message={toastMessage} type={toastType} />}
+        {showToast && <Toast messageKey={toastMessage} type={toastType} />}
       </div>
     </section>
   );

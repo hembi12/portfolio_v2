@@ -1,9 +1,10 @@
+// src/components/contact/Toast.jsx
 import { FaCheckCircle, FaExclamationCircle } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 export default function Toast({ messageKey, type = "success" }) {
-  const isSuccess = type === "success";
   const { t } = useTranslation();
+  const isSuccess = type === "success";
 
   return (
     <div
