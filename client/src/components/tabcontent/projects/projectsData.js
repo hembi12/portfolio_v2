@@ -14,7 +14,7 @@ export const projectsData = (t) => [
       "Vercel",
     ],
     icons: ["mobile", "tablet", "desktop"],
-    liveUrl: "https://driver-page-five.vercel.app/",
+    liveUrl: "https://www.hmmobility.services/",
     repoUrl: "https://github.com/hembi12/driver-page",
   },
   {
