@@ -29,6 +29,8 @@
     "desc_v2": "An improved version of my portfolio, with a better structure, a modern design, and reusable components.",
     "title_birthday": "Birthday Invitation",
     "desc_birthday": "Shows guests all the event details and lets them RSVP.",
+    "title_drive": "HM Mobility",
+    "desc_drive": "Website for quoting private transportation services in Mexico City with various service and payment options.",
     "view_page": "View Page",
     "repository": "Repository",
     "tooltip_mobile": "Mobile responsive",

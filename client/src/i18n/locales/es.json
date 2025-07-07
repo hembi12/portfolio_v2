@@ -29,6 +29,8 @@
     "desc_v2": "Una versión mejorada de mi portafolio, con una mejor estructura, un diseño moderno y componentes reutilizables.",
     "title_birthday": "Invitación de cumpleaños",
     "desc_birthday": "Muestra a los invitados todos los detalles del evento y les permite confirmar su asistencia.",
+    "title_drive": "HM Mobility",
+    "desc_drive": "Pagina web para cotizar servicios de transporte privado en CDMX con diversas opciones de servicios y pago.",
     "view_page": "Ver Página",
     "repository": "Repositorio",
     "tooltip_mobile": "Responsive móvil",
